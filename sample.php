@@ -4,6 +4,7 @@ class Animal
   public function bark()
   {
     echo 'Yeah, it’s barking.' . PHP_EOL;
+    var_dump('----------1-----------');
   }
 }
 
@@ -16,6 +17,7 @@ class Dog extends Animal
   {
     $this->name = $name;
     $this->age = $age;
+    var_dump('----------2-----------');
   }
 }
 
@@ -31,6 +33,7 @@ class MechaDog extends Dog
       'bsd' => 'mit',
       'chef' => 'apache'
     );
+    var_dump('----------3-----------');
   }
 
   public function proc($arg)
@@ -51,6 +54,7 @@ class MechaDog extends Dog
     else {
       echo $path[0] . "=>" . $this->data[$path[0]] . PHP_EOL;
     }
+    var_dump('----------4-----------');
   }
 }
 
