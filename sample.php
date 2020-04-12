@@ -57,6 +57,7 @@ class MechaDog extends Dog
     else {
       var_dump('----------7-----------');
       echo $path[0] . "=>" . $this->data[$path[0]] . PHP_EOL;
+      // $path[0]の内容が「null」になっているが、「bsd」になるべき
     }
   }
 }
