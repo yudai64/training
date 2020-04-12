@@ -40,7 +40,6 @@ class MechaDog extends Dog
   {
     var_dump('----------4-----------');
     $path = explode("/", explode(" ", $arg)[0]);
-    // explode("/", explode(" ", $arg)[0]);の内容が「array(1)」になっているが、「array(2)」になるべき
     array_shift($path);
     if( is_null($path) ) {
       var_dump('----------5-----------');
@@ -58,7 +57,6 @@ class MechaDog extends Dog
     else {
       var_dump('----------7-----------');
       echo $path[0] . "=>" . $this->data[$path[0]] . PHP_EOL;
-      // $path[0]の内容が「null」になっているが、「bsd」になるべき
     }
   }
 }
